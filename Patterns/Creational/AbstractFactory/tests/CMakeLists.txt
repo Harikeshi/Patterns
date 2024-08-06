@@ -4,9 +4,6 @@ file(GLOB_RECURSE SOURCE_FILES "${CMAKE_CURRENT_SOURCE_DIR}/*.cpp")
 #----------------------------------------------------
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 #----------------------------------------------------
-message(${GTEST_LIBRARY})
-message(${GTEST_INCLUDE_DIRS})
-message(${GTEST_LIBRARY} )
 target_link_libraries(${PROJECT_NAME} PUBLIC ${GTEST_LIBRARY} AbstractFactory)
 #----------------------------------------------------
 target_include_directories(${PROJECT_NAME}
